@@ -1,0 +1,82 @@
+{
+  "_comment": "STATIC galaxy structure. Each system: id, name, position [x,y], planets[]. Each planet: id, name, locations (1-4). Lanes auto-connect by proximity. Live threats are NOT here — they live in threats.json (GM-controlled) and are matched onto locations by id (<planet_id>_l<N>).",
+  "systems": [
+    { "id": "sys_01", "name": "Helios",    "position": [300, 300],   "planets": [
+      { "id": "sys_01_p1", "name": "Kronos", "locations": 2 },
+      { "id": "sys_01_p2", "name": "Veld",   "locations": 3 } ] },
+    { "id": "sys_02", "name": "Cygnus",    "position": [560, 220],   "planets": [
+      { "id": "sys_02_p1", "name": "Ashfall", "locations": 1 } ] },
+    { "id": "sys_03", "name": "Eridani",   "position": [820, 360],   "planets": [
+      { "id": "sys_03_p1", "name": "Tython", "locations": 2 },
+      { "id": "sys_03_p2", "name": "Mara",   "locations": 1 },
+      { "id": "sys_03_p3", "name": "Bann",   "locations": 3 } ] },
+    { "id": "sys_04", "name": "Tauron",    "position": [1080, 250],  "planets": [
+      { "id": "sys_04_p1", "name": "Cinder", "locations": 2 },
+      { "id": "sys_04_p2", "name": "Vault",  "locations": 4 } ] },
+    { "id": "sys_05", "name": "Vega",      "position": [1340, 360],  "planets": [
+      { "id": "sys_05_p1", "name": "Orun",     "locations": 1 },
+      { "id": "sys_05_p2", "name": "Threnody", "locations": 2 },
+      { "id": "sys_05_p3", "name": "Kessen",   "locations": 3 },
+      { "id": "sys_05_p4", "name": "Dunmor",   "locations": 2 } ] },
+    { "id": "sys_06", "name": "Sirius",    "position": [1600, 260],  "planets": [
+      { "id": "sys_06_p1", "name": "Pyrae", "locations": 2 },
+      { "id": "sys_06_p2", "name": "Sable", "locations": 3 },
+      { "id": "sys_06_p3", "name": "Wren",  "locations": 1 } ] },
+    { "id": "sys_07", "name": "Altair",    "position": [1880, 380],  "planets": [
+      { "id": "sys_07_p1", "name": "Korr", "locations": 2 } ] },
+    { "id": "sys_08", "name": "Rigel",     "position": [2100, 300],  "planets": [
+      { "id": "sys_08_p1", "name": "Lethe", "locations": 1 },
+      { "id": "sys_08_p2", "name": "Onyx",  "locations": 3 } ] },
+    { "id": "sys_09", "name": "Lyra",      "position": [360, 560],   "planets": [
+      { "id": "sys_09_p1", "name": "Marrow", "locations": 2 },
+      { "id": "sys_09_p2", "name": "Calder", "locations": 1 },
+      { "id": "sys_09_p3", "name": "Vesper", "locations": 2 } ] },
+    { "id": "sys_10", "name": "Orion",     "position": [640, 640],   "planets": [
+      { "id": "sys_10_p1", "name": "Thorne",  "locations": 3 },
+      { "id": "sys_10_p2", "name": "Halcyon", "locations": 2 } ] },
+    { "id": "sys_11", "name": "Antares",   "position": [900, 560],   "planets": [
+      { "id": "sys_11_p1", "name": "Drift", "locations": 1 } ] },
+    { "id": "sys_12", "name": "Procyon",   "position": [1180, 680],  "planets": [
+      { "id": "sys_12_p1", "name": "Erebos", "locations": 2 },
+      { "id": "sys_12_p2", "name": "Solace", "locations": 1 },
+      { "id": "sys_12_p3", "name": "Mire",   "locations": 4 },
+      { "id": "sys_12_p4", "name": "Tundra", "locations": 2 } ] },
+    { "id": "sys_13", "name": "Castor",    "position": [1460, 600],  "planets": [
+      { "id": "sys_13_p1", "name": "Garrow",  "locations": 2 },
+      { "id": "sys_13_p2", "name": "Bastion", "locations": 3 } ] },
+    { "id": "sys_14", "name": "Pollux",    "position": [1720, 680],  "planets": [
+      { "id": "sys_14_p1", "name": "Quill",    "locations": 1 },
+      { "id": "sys_14_p2", "name": "Ferrum",   "locations": 2 },
+      { "id": "sys_14_p3", "name": "Mosswell", "locations": 3 } ] },
+    { "id": "sys_15", "name": "Mizar",     "position": [2000, 600],  "planets": [
+      { "id": "sys_15_p1", "name": "Aestus", "locations": 2 } ] },
+    { "id": "sys_16", "name": "Draco",     "position": [480, 860],   "planets": [
+      { "id": "sys_16_p1", "name": "Brine",  "locations": 1 },
+      { "id": "sys_16_p2", "name": "Cobalt", "locations": 2 } ] },
+    { "id": "sys_17", "name": "Phoenix",   "position": [760, 960],   "planets": [
+      { "id": "sys_17_p1", "name": "Dross", "locations": 3 },
+      { "id": "sys_17_p2", "name": "Ember", "locations": 2 },
+      { "id": "sys_17_p3", "name": "Fenn",  "locations": 1 } ] },
+    { "id": "sys_18", "name": "Cetus",     "position": [1040, 880],  "planets": [
+      { "id": "sys_18_p1", "name": "Gale",   "locations": 2 },
+      { "id": "sys_18_p2", "name": "Hollow", "locations": 2 } ] },
+    { "id": "sys_19", "name": "Andromeda", "position": [1320, 980],  "planets": [
+      { "id": "sys_19_p1", "name": "Ironwood", "locations": 1 } ] },
+    { "id": "sys_20", "name": "Hydra",     "position": [1600, 900],  "planets": [
+      { "id": "sys_20_p1", "name": "Jund",  "locations": 2 },
+      { "id": "sys_20_p2", "name": "Karst", "locations": 3 },
+      { "id": "sys_20_p3", "name": "Lumen", "locations": 1 } ] },
+    { "id": "sys_21", "name": "Perseus",   "position": [1880, 980],  "planets": [
+      { "id": "sys_21_p1", "name": "Mistral", "locations": 2 },
+      { "id": "sys_21_p2", "name": "Nadir",   "locations": 1 } ] },
+    { "id": "sys_22", "name": "Aquila",    "position": [620, 1180],  "planets": [
+      { "id": "sys_22_p1", "name": "Oss",   "locations": 1 },
+      { "id": "sys_22_p2", "name": "Pell",  "locations": 2 },
+      { "id": "sys_22_p3", "name": "Riven", "locations": 3 } ] },
+    { "id": "sys_23", "name": "Corvus",    "position": [1180, 1180], "planets": [
+      { "id": "sys_23_p1", "name": "Sunder", "locations": 2 } ] },
+    { "id": "sys_24", "name": "Nebula-9",  "position": [1740, 1180], "planets": [
+      { "id": "sys_24_p1", "name": "Tarn",  "locations": 1 },
+      { "id": "sys_24_p2", "name": "Umbra", "locations": 2 } ] }
+  ]
+}

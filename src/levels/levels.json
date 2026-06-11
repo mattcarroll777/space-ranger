@@ -1,0 +1,4 @@
+{
+  "_comment": "Location id -> level scene. A LOCATION IS A MAP: the level is the place (terrain/props/lighting), the alert in src/alerts/content/active.json decides what happens there. Locations without an entry fall back to the placeholder deploy screen (for now).",
+  "sys_01_p1_l1": "res://src/levels/kronos_flats/kronos_flats.tscn"
+}

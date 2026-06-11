@@ -1,0 +1,4 @@
+{
+  "_comment": "Alert VARIANT id (kinds.json) -> encounter scene the mission runner spawns into the level. A variant IS an encounter: the scene decides which actors appear and where. Variants without an entry spawn nothing (for now).",
+  "droid_army": "res://src/actors/threats/droid_army/droid_army.tscn"
+}

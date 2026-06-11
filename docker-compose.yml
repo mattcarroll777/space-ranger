@@ -1,0 +1,24 @@
+services:
+  godot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        GODOT_VERSION: ${GODOT_VERSION:-4.2.2}
+    image: space-rangers-godot:${GODOT_VERSION:-4.2.2}
+    container_name: space-rangers-godot
+    user: '${UID:-1000}:${GID:-1000}'
+    working_dir: /workspace
+    # WSLg display: connect to the host's built-in X/Wayland server so the
+    # game window appears on the Windows desktop. WSLg sockets live under
+    # /mnt/wslg, so that whole tree is shared into the container.
+    environment:
+      DISPLAY: ":0"
+      WAYLAND_DISPLAY: "wayland-0"
+      XDG_RUNTIME_DIR: "/mnt/wslg/runtime-dir"
+      PULSE_SERVER: "/mnt/wslg/PulseServer"
+    volumes:
+      - ./:/workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /mnt/wslg:/mnt/wslg
+    network_mode: host

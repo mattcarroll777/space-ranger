@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://srdroidarmy01"]
+
+[ext_resource type="PackedScene" path="res://src/actors/threats/droid_army/droid.tscn" id="1_droid"]
+[ext_resource type="PackedScene" path="res://assets/models/enemies/threats/robots/droid_army/George.gltf" id="2_george"]
+[ext_resource type="PackedScene" path="res://assets/models/enemies/threats/robots/droid_army/Leela.gltf" id="3_leela"]
+[ext_resource type="PackedScene" path="res://assets/models/enemies/threats/robots/droid_army/Mike.gltf" id="4_mike"]
+[ext_resource type="PackedScene" path="res://assets/models/enemies/threats/robots/droid_army/Stan.gltf" id="5_stan"]
+
+[node name="DroidArmy" type="Node3D"]
+
+[node name="George" parent="." instance=ExtResource("1_droid")]
+transform = Transform3D(0.707, 0, -0.707, 0, 1, 0, 0.707, 0, 0.707, -12, 0, -18)
+model = ExtResource("2_george")
+
+[node name="Leela" parent="." instance=ExtResource("1_droid")]
+transform = Transform3D(-0.5, 0, 0.866, 0, 1, 0, -0.866, 0, -0.5, 18, 0, -28)
+model = ExtResource("3_leela")
+
+[node name="Mike" parent="." instance=ExtResource("1_droid")]
+transform = Transform3D(0.966, 0, 0.259, 0, 1, 0, -0.259, 0, 0.966, -22, 0, -38)
+model = ExtResource("4_mike")
+
+[node name="Stan" parent="." instance=ExtResource("1_droid")]
+transform = Transform3D(-0.866, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866, 14, 0, 12)
+model = ExtResource("5_stan")

@@ -1,0 +1,79 @@
+{
+  "_comment": "Alert taxonomy: mode -> kind -> category -> variant. Each KIND has its own color (hex) and priority (higher wins when colouring a system node). The GM activates alerts per location in content/active.json. Add kinds/categories/variants here — data only, no code.",
+  "modes": {
+    "pve": {
+      "name": "PvE",
+      "kinds": {
+        "threat": {
+          "name": "Threat", "color": "#ff8c8c", "symbol": "!", "priority": 100,
+          "categories": {
+            "kaiju":  { "name": "Kaiju", "variants": {
+              "giant_person": { "name": "Colossus" },
+              "godzilla":     { "name": "Leviathan" },
+              "tentacle":     { "name": "Maw" } } },
+            "robots": { "name": "Robot Army", "variants": {
+              "swarm": { "name": "Swarm" },
+              "titan": { "name": "Titan" },
+              "droid_army": { "name": "Droid Army" } } }
+          }
+        },
+        "quest": {
+          "name": "Quest", "color": "#ffd24d", "symbol": "?", "priority": 40,
+          "categories": {
+            "rescue":  { "name": "Rescue", "variants": {
+              "civilians": { "name": "Civilian Evac" },
+              "pilot":     { "name": "Downed Pilot" } } },
+            "salvage": { "name": "Salvage", "variants": {
+              "derelict":  { "name": "Derelict Ship" },
+              "black_box": { "name": "Black Box" } } },
+            "recon":   { "name": "Recon", "variants": {
+              "survey": { "name": "Survey" },
+              "beacon": { "name": "Beacon" } } }
+          }
+        }
+      }
+    },
+    "pvpve": {
+      "name": "PvPvE",
+      "kinds": {
+        "raid": {
+          "name": "Raid", "color": "#4ddbdb", "symbol": "$", "priority": 80,
+          "categories": {
+            "extraction": { "name": "Extraction", "variants": {
+              "vault":    { "name": "Vault Run" },
+              "datacore": { "name": "Datacore" } } }
+          }
+        },
+        "survival": {
+          "name": "Survival", "color": "#ff8033", "symbol": "#", "priority": 70,
+          "categories": {
+            "waves": { "name": "Waves", "variants": {
+              "horde":   { "name": "Horde" },
+              "endless": { "name": "Endless" } } }
+          }
+        }
+      }
+    },
+    "pvp": {
+      "name": "PvP",
+      "kinds": {
+        "arena": {
+          "name": "Arena", "color": "#b366ff", "symbol": "VS", "priority": 60,
+          "categories": {
+            "match": { "name": "Match", "variants": {
+              "deathmatch": { "name": "Deathmatch" },
+              "team":       { "name": "Team Clash" } } }
+          }
+        },
+        "bounty": {
+          "name": "Bounty", "color": "#ff66b3", "symbol": "@", "priority": 50,
+          "categories": {
+            "target": { "name": "Target", "variants": {
+              "marked": { "name": "Marked Ranger" },
+              "vip":    { "name": "VIP Hunt" } } }
+          }
+        }
+      }
+    }
+  }
+}

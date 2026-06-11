@@ -1,0 +1,19 @@
+{
+  "_comment": "GM-controlled LIVE alerts. Each entry: location (<planet_id>_l<N>), kind, category, variant — all defined in src/alerts/kinds.json. A location may appear more than once (multiple alerts). Edited periodically; later server-driven.",
+  "active": [
+    { "location": "sys_06_p2_l1", "kind": "threat",   "category": "kaiju",      "variant": "giant_person" },
+    { "location": "sys_06_p2_l3", "kind": "threat",   "category": "kaiju",      "variant": "tentacle" },
+    { "location": "sys_12_p3_l2", "kind": "threat",   "category": "robots",     "variant": "swarm" },
+    { "location": "sys_20_p2_l1", "kind": "threat",   "category": "kaiju",      "variant": "godzilla" },
+    { "location": "sys_20_p2_l2", "kind": "threat",   "category": "robots",     "variant": "titan" },
+    { "location": "sys_01_p1_l1", "kind": "threat",   "category": "robots",     "variant": "droid_army" },
+    { "location": "sys_05_p3_l2", "kind": "quest",    "category": "salvage",    "variant": "derelict" },
+    { "location": "sys_10_p1_l1", "kind": "quest",    "category": "recon",      "variant": "survey" },
+    { "location": "sys_14_p2_l1", "kind": "quest",    "category": "rescue",     "variant": "pilot" },
+    { "location": "sys_22_p3_l2", "kind": "quest",    "category": "salvage",    "variant": "black_box" },
+    { "location": "sys_04_p2_l1", "kind": "raid",     "category": "extraction", "variant": "vault" },
+    { "location": "sys_08_p2_l2", "kind": "survival", "category": "waves",      "variant": "horde" },
+    { "location": "sys_13_p2_l1", "kind": "arena",    "category": "match",      "variant": "deathmatch" },
+    { "location": "sys_17_p1_l2", "kind": "bounty",   "category": "target",     "variant": "marked" }
+  ]
+}
